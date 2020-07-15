@@ -1,0 +1,16 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Ruukita/Elevator/Elevator.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sim_1/new/sim.v,1545320112,verilog,,,,sim,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sim_1/new/test_door.v,1545456490,verilog,,,,test_door,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sim_1/new/test_sim.v,1546440048,verilog,,,,test_sim,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v,1545584008,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v,,Buzzer,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v,1546439605,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v,,Door_Control,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v,1545448262,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v,,Inside_Request_FF,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v,1546438015,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Program.v,,Main_Control,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Program.v,1546439748,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v,,Main_Program,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v,1545448466,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v,,Outside_Request_FF,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v,1545314286,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer_60.v,,Timer,,,,,,,,
+C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer_60.v,1545576443,verilog,,C:/Users/Ruukita/Elevator/Elevator.srcs/sim_1/new/test_sim.v,,Timer_60,,,,,,,,

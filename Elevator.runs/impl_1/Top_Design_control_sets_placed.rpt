@@ -1,0 +1,96 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Dec 24 01:59:52 2018
+| Host         : DESKTOP-6VQANNM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Design_control_sets_placed.rpt
+| Design       : Top_Design
+| Device       : xc7a100ti
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    98 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           17 |
+| No           | No                    | Yes                    |             350 |          127 |
+| No           | Yes                   | No                     |              21 |            9 |
+| Yes          | No                    | No                     |               8 |            2 |
+| Yes          | No                    | Yes                    |             111 |           43 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                  Enable Signal                 |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++-------------------------------+------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+| ~clk_IBUF_BUFG                |                                                |                                                          |                1 |              2 |
+|  KI/fd/CLK                    | KI/keyboard_val[3]_i_1_n_0                     | KI/fd/cnt_p_reg[5]_0                                     |                1 |              4 |
+| ~clk_IBUF_BUFG                | MP/main_control/inside_request_out[3]_i_1_n_0  | HHH/fd/cnt_p_reg[5]_0                                    |                3 |              4 |
+| ~clk_IBUF_BUFG                | MP/main_control/state[4]_i_1_n_0               | HHH/fd/cnt_p_reg[5]_0                                    |                4 |              5 |
+|  KI/next_state_reg[5]_i_2_n_0 |                                                |                                                          |                2 |              6 |
+|  clk_IBUF_BUFG                | MP/door_control/buzzer/PreDiv[14]_i_1_n_0      | MP/door_control/buzzer/PreDiv[14]_i_3_n_0                |                2 |              6 |
+| ~clk_IBUF_BUFG                | MP/main_control/outside_request_out[5]_i_1_n_0 | HHH/fd/cnt_p_reg[5]_0                                    |                5 |              6 |
+|  KI/fd/CLK                    |                                                | KI/fd/cnt_p_reg[5]_0                                     |                3 |              8 |
+|  KI/fd/CLK                    | KI/col_val                                     |                                                          |                2 |              8 |
+|  KI/fd/CLK                    | KI/col[3]_i_1_n_0                              | KI/fd/cnt_p_reg[5]_0                                     |                2 |              8 |
+| ~clk_IBUF_BUFG                |                                                | HHH/fd/cnt_p_reg[5]_0                                    |                7 |              9 |
+|  clk_IBUF_BUFG                |                                                | MP/main_control/count_reg[0]                             |                3 |             10 |
+|  clk_IBUF_BUFG                |                                                |                                                          |                6 |             12 |
+|  clk_IBUF_BUFG                | MP/door_control/buzzer/beep0                   | MP/door_control/buzzer/PreDiv[14]_i_3_n_0                |                5 |             14 |
+|  clk_out                      |                                                |                                                          |                8 |             16 |
+|  clk_IBUF_BUFG                |                                                | MP/door_control/buzzer/PreDiv[14]_i_3_n_0                |                5 |             17 |
+|  fd/outside_button_reg[2]     |                                                | KI/p_0_in                                                |                9 |             21 |
+|  clk_flash                    | HHH/flash                                      | HHH/fd1/clk_p_reg_0                                      |               13 |             32 |
+|  clk_out                      |                                                | HHH/fd/cnt_p_reg[5]_0                                    |               14 |             32 |
+|  clk_IBUF_BUFG                | MP/sixty_seconds_timer/times0                  | MP/door_control/AR[0]                                    |                8 |             32 |
+|  clk_IBUF_BUFG                |                                                | MP/door_control/one_second/cnt_p[31]_i_2__2_n_0          |                7 |             33 |
+|  clk_IBUF_BUFG                |                                                | MP/door_control/one_and_half_second/cnt_p[31]_i_2__3_n_0 |               10 |             33 |
+|  clk_IBUF_BUFG                |                                                | MP/door_control/AR[0]                                    |               14 |             33 |
+|  clk_IBUF_BUFG                |                                                | MP/main_control/clk_p_reg                                |               12 |             33 |
+|  clk_IBUF_BUFG                |                                                | HHH/fd1/clk_p_reg_0                                      |                8 |             33 |
+|  clk_IBUF_BUFG                |                                                | HHH/fd/cnt_p_reg[5]_0                                    |               17 |             43 |
+|  clk_IBUF_BUFG                |                                                | KI/fd/cnt_p_reg[5]_0                                     |               27 |             66 |
++-------------------------------+------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     2 |
+| 5      |                     1 |
+| 6      |                     3 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 10     |                     1 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 16+    |                    13 |
++--------+-----------------------+
+
+

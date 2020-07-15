@@ -1,0 +1,681 @@
+
+*** Running vivado
+    with args -log Top_Design.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Design.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Top_Design.tcl -notrace
+Command: synth_design -top Top_Design -part xc7a100tifgg484-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28788 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 331.602 ; gain = 101.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_Design' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Top_Design.v:2]
+INFO: [Synth 8-638] synthesizing module 'Key_Input' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:2]
+	Parameter NO_KEY_PRESSED bound to: 6'b000001 
+	Parameter SCAN_COL0 bound to: 6'b000010 
+	Parameter SCAN_COL1 bound to: 6'b000100 
+	Parameter SCAN_COL2 bound to: 6'b001000 
+	Parameter SCAN_COL3 bound to: 6'b010000 
+	Parameter KEY_PRESSED bound to: 6'b100000 
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+	Parameter N bound to: 200000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cnt_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:40]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (1#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:86]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:120]
+WARNING: [Synth 8-5788] Register col_val_reg in module Key_Input is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:102]
+WARNING: [Synth 8-5788] Register row_val_reg in module Key_Input is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:103]
+INFO: [Synth 8-256] done synthesizing module 'Key_Input' (2#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:2]
+INFO: [Synth 8-638] synthesizing module 'heyheyhey' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/heyheyhey.v:2]
+	Parameter s0 bound to: 254 - type: integer 
+	Parameter s1 bound to: 253 - type: integer 
+	Parameter s2 bound to: 251 - type: integer 
+	Parameter s3 bound to: 247 - type: integer 
+	Parameter s4 bound to: 239 - type: integer 
+	Parameter s5 bound to: 223 - type: integer 
+	Parameter s6 bound to: 191 - type: integer 
+	Parameter s7 bound to: 127 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Timer__parameterized0' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+	Parameter N bound to: 25000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cnt_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:40]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer__parameterized0' (2#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+INFO: [Synth 8-256] done synthesizing module 'heyheyhey' (3#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/heyheyhey.v:2]
+INFO: [Synth 8-638] synthesizing module 'Main_Program' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Program.v:23]
+INFO: [Synth 8-638] synthesizing module 'Timer__parameterized1' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+	Parameter N bound to: 800000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cnt_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:40]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer__parameterized1' (3#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+INFO: [Synth 8-638] synthesizing module 'Main_Control' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v:23]
+	Parameter S0 bound to: 5'b00001 
+	Parameter S1 bound to: 5'b00010 
+	Parameter S2 bound to: 5'b00100 
+	Parameter S3 bound to: 5'b01000 
+	Parameter S4 bound to: 5'b10000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v:67]
+WARNING: [Synth 8-6014] Unused sequential element rst_jug_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v:55]
+WARNING: [Synth 8-5788] Register motion_state_reg in module Main_Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v:98]
+INFO: [Synth 8-256] done synthesizing module 'Main_Control' (4#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'Inside_Request_FF' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:23]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:38]
+WARNING: [Synth 8-5788] Register check_1_reg in module Inside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:39]
+WARNING: [Synth 8-5788] Register check_2_reg in module Inside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:46]
+WARNING: [Synth 8-5788] Register check_3_reg in module Inside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:53]
+WARNING: [Synth 8-5788] Register check_4_reg in module Inside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:60]
+INFO: [Synth 8-256] done synthesizing module 'Inside_Request_FF' (5#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Inside_Request_FF.v:23]
+INFO: [Synth 8-638] synthesizing module 'Outside_Request_FF' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:23]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:38]
+WARNING: [Synth 8-5788] Register check_1_reg in module Outside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:39]
+WARNING: [Synth 8-5788] Register check_2_reg in module Outside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:46]
+WARNING: [Synth 8-5788] Register check_3_reg in module Outside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:53]
+WARNING: [Synth 8-5788] Register check_4_reg in module Outside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:60]
+WARNING: [Synth 8-5788] Register check_5_reg in module Outside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:67]
+WARNING: [Synth 8-5788] Register check_6_reg in module Outside_Request_FF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:74]
+INFO: [Synth 8-256] done synthesizing module 'Outside_Request_FF' (6#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Outside_Request_FF.v:23]
+INFO: [Synth 8-638] synthesizing module 'Door_Control' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'Timer__parameterized2' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+	Parameter N bound to: 100000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cnt_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:40]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer__parameterized2' (6#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+INFO: [Synth 8-638] synthesizing module 'Timer__parameterized3' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+	Parameter N bound to: 300000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cnt_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:40]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'Timer__parameterized3' (6#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer.v:22]
+INFO: [Synth 8-638] synthesizing module 'Buzzer' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:43]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:74]
+INFO: [Synth 8-256] done synthesizing module 'Buzzer' (7#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:43]
+WARNING: [Synth 8-5788] Register rst_timer_one_half_second_reg in module Door_Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v:54]
+WARNING: [Synth 8-5788] Register rst_timer_half_second_reg in module Door_Control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v:64]
+INFO: [Synth 8-256] done synthesizing module 'Door_Control' (8#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'Timer_60' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer_60.v:23]
+	Parameter N bound to: 1000000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Timer_60' (9#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer_60.v:23]
+WARNING: [Synth 8-3848] Net rst_timer_thirty_seconds in module/entity Main_Program does not have driver. [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Program.v:27]
+INFO: [Synth 8-256] done synthesizing module 'Main_Program' (10#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Program.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Top_Design.v:50]
+INFO: [Synth 8-256] done synthesizing module 'Top_Design' (11#1) [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Top_Design.v:2]
+WARNING: [Synth 8-3331] design Main_Control has unconnected port timer_thirty_seconds[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 392.660 ; gain = 162.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin thirty_seconds_timer:rst_n to constant 0 [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Main_Program.v:39]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 392.660 ; gain = 162.445
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tifgg484-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ruukita/Elevator/Elevator.srcs/constrs_1/new/KEY_SEG.xdc]
+Finished Parsing XDC File [C:/Users/Ruukita/Elevator/Elevator.srcs/constrs_1/new/KEY_SEG.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ruukita/Elevator/Elevator.srcs/constrs_1/new/KEY_SEG.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Design_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 740.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 740.332 ; gain = 510.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tifgg484-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 740.332 ; gain = 510.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 740.332 ; gain = 510.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'Key_Input'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "col" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_pressed_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "col_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyboard_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flash" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flash" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg_an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "seg_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "stop" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "motion_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "PreDiv" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jug" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:61]
+WARNING: [Synth 8-6014] Unused sequential element Delay_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:62]
+INFO: [Synth 8-4471] merging register 'stop_and_wait_reg[0:0]' into 'rst_door_control_timer_reg[0:0]' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v:46]
+WARNING: [Synth 8-6014] Unused sequential element stop_and_wait_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Door_Control.v:46]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rst_door_control_timer" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "times" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element times_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer_60.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Key_Input.v:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 740.332 ; gain = 510.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 35    
+	   3 Input      6 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 23    
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 2     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 18    
+	   3 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 41    
+	   3 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 37    
+	   7 Input      1 Bit        Muxes := 4     
+	  17 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 191   
+	   6 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Design 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  13 Input      1 Bit        Muxes := 12    
+Module Timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module Key_Input 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 5     
+	   7 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	  17 Input      1 Bit        Muxes := 1     
+Module Timer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module heyheyhey 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Timer__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Main_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 30    
+	   3 Input      6 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 23    
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 18    
+	   3 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 34    
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 149   
+	   3 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 1     
+Module Inside_Request_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module Outside_Request_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+Module Timer__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Timer__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module Buzzer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+Module Door_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 21    
+Module Timer_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flash" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flash" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uUP1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "uDO1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "one_second/cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "one_and_half_second/cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "buzzer/jug" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "buzzer/PreDiv" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element buzzer/Delay_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:62]
+WARNING: [Synth 8-6014] Unused sequential element buzzer/cnt_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Buzzer.v:61]
+INFO: [Synth 8-5545] ROM "cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element times_reg was removed.  [C:/Users/Ruukita/Elevator/Elevator.srcs/sources_1/new/Timer_60.v:35]
+INFO: [Synth 8-5545] ROM "KI/fd/cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "KI/keyboard_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "fd/cnt_p" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_p0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Main_Control has unconnected port timer_thirty_seconds[0]
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[0]' (FDCE) to 'MP/door_control/buzzer/PreDiv_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[1]' (FDCE) to 'MP/door_control/buzzer/PreDiv_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[2]' (FDPE) to 'MP/door_control/buzzer/PreDiv_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[5]' (FDPE) to 'MP/door_control/buzzer/PreDiv_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[6]' (FDPE) to 'MP/door_control/buzzer/PreDiv_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[7]' (FDCE) to 'MP/door_control/buzzer/PreDiv_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[8]' (FDPE) to 'MP/door_control/buzzer/PreDiv_reg[11]'
+INFO: [Synth 8-3886] merging instance 'MP/door_control/buzzer/PreDiv_reg[9]' (FDPE) to 'MP/door_control/buzzer/PreDiv_reg[13]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\MP/door_control/buzzer/PreDiv_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MP/door_control/buzzer/PreDiv_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[31]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[30]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[29]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[28]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[27]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[26]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[25]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[24]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[23]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[22]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[21]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[20]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[19]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[18]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[17]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[16]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[15]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[14]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[13]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[12]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[11]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[10]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[9]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[8]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[7]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[6]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[5]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[4]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[3]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[2]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[1]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/cnt_p_reg[0]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/thirty_seconds_timer/clk_p_reg) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/door_control/buzzer/PreDiv_reg[15]) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/door_control/buzzer/PreDiv_reg[11]) is unused and will be removed from module Top_Design.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\MP/main_control/motion_state_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\MP/main_control/motion_state_reg[1]_LDC )
+INFO: [Synth 8-3886] merging instance 'HHH/seg_out_reg[7]' (FD) to 'HHH/seg_an_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (MP/main_control/motion_state_reg[1]_LDC) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/main_control/motion_state_reg[1]_C) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/main_control/motion_state_reg[0]_LDC) is unused and will be removed from module Top_Design.
+WARNING: [Synth 8-3332] Sequential element (MP/main_control/motion_state_reg[0]_C) is unused and will be removed from module Top_Design.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 740.332 ; gain = 510.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 748.184 ; gain = 517.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 749.145 ; gain = 518.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   101|
+|3     |LUT1   |    19|
+|4     |LUT2   |   136|
+|5     |LUT3   |    91|
+|6     |LUT4   |   105|
+|7     |LUT5   |   123|
+|8     |LUT6   |   385|
+|9     |FDCE   |   452|
+|10    |FDPE   |     5|
+|11    |FDRE   |    49|
+|12    |LD     |     6|
+|13    |IBUF   |     6|
+|14    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------+------+
+|      |Instance                  |Module                |Cells |
++------+--------------------------+----------------------+------+
+|1     |top                       |                      |  1514|
+|2     |  HHH                     |heyheyhey             |   373|
+|3     |    fd                    |Timer_1               |    84|
+|4     |    fd1                   |Timer__parameterized0 |    85|
+|5     |  KI                      |Key_Input             |   149|
+|6     |    fd                    |Timer_0               |    84|
+|7     |  MP                      |Main_Program          |   855|
+|8     |    door_control          |Door_Control          |   313|
+|9     |      buzzer              |Buzzer                |    98|
+|10    |      one_and_half_second |Timer__parameterized3 |    88|
+|11    |      one_second          |Timer__parameterized2 |    99|
+|12    |    inside_a              |Inside_Request_FF     |    18|
+|13    |    main_control          |Main_Control          |   260|
+|14    |    outside_b             |Outside_Request_FF    |    30|
+|15    |    sixty_seconds_timer   |Timer_60              |   151|
+|16    |    three_seconds_timer   |Timer__parameterized1 |    83|
+|17    |  fd                      |Timer                 |    83|
++------+--------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 784.664 ; gain = 206.777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 784.664 ; gain = 554.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 784.664 ; gain = 558.223
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ruukita/Elevator/Elevator.runs/synth_1/Top_Design.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Design_utilization_synth.rpt -pb Top_Design_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 784.664 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 24 01:59:07 2018...

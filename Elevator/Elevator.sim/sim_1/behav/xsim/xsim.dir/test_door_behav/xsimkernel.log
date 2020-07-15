@@ -1,0 +1,7 @@
+Running: xsim.dir/test_door_behav/xsimk.exe -simmode gui -wdb test_door_behav.wdb -simrunnum 0 -socket 6171
+Design successfully loaded
+Design Loading Memory Usage: 7788 KB (Peak: 7788 KB)
+Design Loading CPU Usage: 280 ms
+Simulation completed
+Simulation Memory Usage: 8472 KB (Peak: 8472 KB)
+Simulation CPU Usage: 280 ms

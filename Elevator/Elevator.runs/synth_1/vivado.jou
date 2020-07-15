@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec 24 01:58:13 2018
+# Process ID: 29300
+# Current directory: C:/Users/Ruukita/Elevator/Elevator.runs/synth_1
+# Command line: vivado.exe -log Top_Design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Design.tcl
+# Log file: C:/Users/Ruukita/Elevator/Elevator.runs/synth_1/Top_Design.vds
+# Journal file: C:/Users/Ruukita/Elevator/Elevator.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Design.tcl -notrace
